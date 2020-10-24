@@ -3,6 +3,14 @@ package L716;
 
 import java.util.*;
 
+/**
+ * Time Complexity: O(1) for all operations except popMax which has a time
+ * complexity of O(N) where N is the number of elements - position of the max
+ * node.
+ * 
+ * Space Complexity: O(N) where N is the maximum number of elements pushed to
+ * the stack.
+ */
 class MaxStack {
   private int curMax = Integer.MIN_VALUE;
   Stack<Pair<Integer, Integer>> stack;
