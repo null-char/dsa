@@ -46,26 +46,26 @@ class MinStack {
   public int getMin() {
     return this.curMin;
   }
+}
 
-  /**
-   * Utility class for representing pair tuple data structures.
-   */
-  class Pair<T1, T2> {
-    private T1 first;
-    private T2 second;
+/**
+ * Utility class for representing pair tuple data structures.
+ */
+class Pair<T1, T2> {
+  private T1 first;
+  private T2 second;
 
-    public Pair(T1 fst, T2 snd) {
-      this.first = fst;
-      this.second = snd;
-    }
+  public Pair(T1 fst, T2 snd) {
+    this.first = fst;
+    this.second = snd;
+  }
 
-    public T1 fst() {
-      return this.first;
-    }
+  public T1 fst() {
+    return this.first;
+  }
 
-    public T2 snd() {
-      return this.second;
-    }
+  public T2 snd() {
+    return this.second;
   }
 }
 
