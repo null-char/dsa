@@ -10,19 +10,18 @@ class Solution {
       return res;
     }
 
-    List<Integer> nums = new ArrayList<Integer>(target.length);
+    Stack<Integer> nums = new Stack<Integer>();
 
     for (int i = 1; i <= n; i++) {
       if (nums.size() == target.length) {
         return res;
       }
 
-      nums.add(i);
-      int idx = nums.indexOf(i);
+      nums.push(i);
       res.add("Push");
 
       if (!this.checkIfExists(i, target)) {
-        nums.remove(idx);
+        nums.pop();
         res.add("Pop");
       }
     }
@@ -43,7 +42,7 @@ class Solution {
 class L1441 {
   public static void main(String[] args) {
     Solution soln = new Solution();
-    int[] target = new int[] { 1, 2 };
+    int[] target = new int[] { 1, 3 };
     int n = 4;
 
     List<String> res = soln.buildArray(target, n);
