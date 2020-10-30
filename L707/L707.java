@@ -134,9 +134,13 @@ class MyLinkedList {
 class Driver {
   public static void main(String[] args) {
     MyLinkedList myLinkedList = new MyLinkedList();
-    myLinkedList.addAtIndex(0, 1);
-    myLinkedList.addAtIndex(0, 2);
-    myLinkedList.deleteAtIndex(0);
+    myLinkedList.addAtHead(35);
+    myLinkedList.addAtIndex(0, 69);
+    myLinkedList.deleteAtIndex(1);
+    myLinkedList.addAtTail(420);
+    myLinkedList.addAtIndex(1, 14);
+    myLinkedList.addAtTail(1337);
+    myLinkedList.deleteAtIndex(1);
     myLinkedList.printList();
   }
 }
