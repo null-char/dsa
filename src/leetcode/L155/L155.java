@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/min-stack/
-package L155;
+package src.leetcode.L155;
 
 import java.util.*;
 

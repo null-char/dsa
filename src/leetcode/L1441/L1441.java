@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/build-an-array-with-stack-operations/submissions/
-package L1441;
+package src.leetcode.L1441;
 
 import java.util.*;
 

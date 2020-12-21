@@ -1,6 +1,6 @@
 // Link: https://leetcode.com/problems/remove-element/
 
-package L27;
+package src.leetcode.L27;
 
 class Solution {
   public int removeElement(int[] nums, int val) {

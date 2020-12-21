@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/missing-number/
-package L268;
+package src.leetcode.L268;
 
 class Solution {
   public int missingNumber(int[] nums) {

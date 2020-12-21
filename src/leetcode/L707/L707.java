@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/design-linked-list/
-package L707;
+package src.leetcode.L707;
 
 import java.util.*;
 

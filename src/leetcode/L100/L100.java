@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/same-tree/
-package L100;
+package src.leetcode.L100;
 
 /**
  * Definition for a binary tree node. public class TreeNode { int val; TreeNode

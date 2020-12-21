@@ -1,17 +1,29 @@
-// Link: https://leetcode.com/problems/delete-node-in-a-linked-list/
-package L237;
+// Link: https://leetcode.com/problems/remove-linked-list-elements/
+package src.leetcode.L203;
 
-/**
- * This is such a dumb question.
- * 
- * Time Complexity: O(1)
- * 
- * Space Complexity: O(1) (Auxiliary)
- */
 class Solution {
-  public void deleteNode(ListNode node) {
-    node.val = node.next.val;
-    node.next = node.next.next;
+  public ListNode removeElements(ListNode head, int val) {
+    // Check if the element(s) that need to be removed are at the start
+    while (head != null && head.val == val) {
+      head = head.next;
+    }
+
+    ListNode cur = head;
+    // Ok to point prev to head since at this point we know for a fact that the
+    // value to be removed is not at the start of the list.
+    ListNode prev = head;
+
+    while (cur != null) {
+      if (cur.val == val) {
+        prev.next = cur.next;
+      } else {
+        prev = cur;
+      }
+
+      cur = cur.next;
+    }
+
+    return head;
   }
 }
 
@@ -65,12 +77,14 @@ class ListNode {
   }
 }
 
-class L237 {
+class L203 {
   public static void main(String[] args) {
-    ListNode head = ListNode.fromArray(new int[] { 4, 5, 1, 9 });
-    Solution soln = new Solution();
-    soln.deleteNode(head.next);
-
+    ListNode head = ListNode.fromArray(new int[] { 1, 2, 2, 1 });
     head.printLinkedList();
+
+    Solution soln = new Solution();
+    ListNode newHead = soln.removeElements(head, 2);
+
+    newHead.printLinkedList();
   }
 }

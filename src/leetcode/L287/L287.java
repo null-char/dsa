@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/find-the-duplicate-number/
-package L287;
+package src.leetcode.L287;
 
 import java.util.*;
 

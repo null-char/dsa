@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/print-foobar-alternately/
-package L1115;
+package src.leetcode.L1115;
 
 import java.util.concurrent.Semaphore;
 

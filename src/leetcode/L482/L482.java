@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/license-key-formatting/
-package L482;
+package src.leetcode.L482;
 
 import java.util.*;
 

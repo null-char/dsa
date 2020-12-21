@@ -1,5 +1,5 @@
 // Link: https://leetcode.com/problems/max-stack/
-package L716;
+package src.leetcode.L716;
 
 import java.util.*;
 

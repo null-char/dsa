@@ -1,5 +1,5 @@
 // Link: https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/java
-package CW_Testing123;
+package src.codewars.LineNumbering;
 
 import java.util.*;
 
