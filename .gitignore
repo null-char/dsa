@@ -1,0 +1,10 @@
+*
+# Ignore all EXCEPT:
+!.*
+!*.cpp
+!*.h
+!*.java
+!*/
+
+.vscode
+.DS_Store
