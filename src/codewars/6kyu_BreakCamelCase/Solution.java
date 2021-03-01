@@ -19,7 +19,7 @@ class Solution {
   }
 }
 
-public class BreakCamelCase {
+public class Solution {
   public static void main(String[] args) {
     System.out.println(Solution.camelCase("camelCaseTest")); // Should output "camel Case Test"
     System.out.println(Solution.camelCase("camelcase")); // Should output the same input string: "camelcase"
