@@ -32,6 +32,7 @@ class Solution {
 int main() {
   vector<int> arr{91, 4, 64, 78};
   vector<vector<int>> pieces{{78}, {4, 64}, {91}};
+  int x = 0
   Solution soln;
   // Should output true i.e "1"
   cout << soln.canFormArray(arr, pieces) << '\n';

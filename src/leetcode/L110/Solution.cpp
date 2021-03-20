@@ -18,9 +18,10 @@ struct TreeNode {
 };
 
 class Solution {
- public:
+public:
   bool isBalanced(TreeNode *root) {
-    if (root == NULL) return true;
+    if (root == NULL)
+      return true;
     int ldepth = getHeight(root->left);
     int rdepth = getHeight(root->right);
 
@@ -34,10 +35,11 @@ class Solution {
     }
   }
 
- private:
+private:
   // Just gets the height of a binary tree recursively
   int getHeight(TreeNode *root) {
-    if (root == NULL) return 0;
+    if (root == NULL)
+      return 0;
 
     return (1 + max(getHeight(root->left), getHeight(root->right)));
   }
